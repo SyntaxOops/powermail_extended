@@ -207,6 +207,10 @@ $(function () {
     openFormPagesModal(this);
   });
 
+  $('.form-header a, .page-header a').on('click', function (e) {
+    e.stopPropagation();
+  });
+
   // Initialize page sorting
   initSortable('.sortable-pages', '.page-header', TYPO3.settings.ajaxUrls['powermail_move'], 'form-uid', 'page-uid');
 

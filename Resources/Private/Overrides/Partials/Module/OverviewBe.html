@@ -11,7 +11,7 @@
                     <h5>{form.title} - ({f:translate(key: 'form.folderUid', extensionName: 'powermail_extended')} {form.pid})</h5>
                     <div class="actions">
                         <a href="{be:uri.editRecord(table:'tx_powermail_domain_model_form', uid:form.uid, returnUrl:returnUrl)}"
-                           title="dsfs" role="button" class="btn btn-sm">
+                           title="{f:translate(key: 'form.editForm', extensionName: 'powermail_extended')}" role="button" class="btn btn-sm">
                             <core:icon identifier="actions-open" size="small"/>
                         </a>
                         <button class="btn btn-sm" data-form-uid="{form.uid}">

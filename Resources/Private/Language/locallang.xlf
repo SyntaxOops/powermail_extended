@@ -33,6 +33,9 @@
             <trans-unit id="form.fieldsCount">
                 <source>Fields Count:</source>
             </trans-unit>
+            <trans-unit id="form.editForm">
+                <source>Edit Form</source>
+            </trans-unit>
             <trans-unit id="form.editPage">
                 <source>Edit Page</source>
             </trans-unit>
