@@ -7,10 +7,10 @@ Extends the Powermail backend module with additional features :
 * Includes an example of adding a custom menu item to the module’s dropdown list.
 
 
-|                  | URL                                                        |
-|------------------|------------------------------------------------------------|
-| **Repository:**  | https://github.com/SyntaxOops/powermail_extended           |
-| **TER:**         | https://extensions.typo3.org/extension/powermail_extended/ |
+|                 | URL                                                           |
+|-----------------|---------------------------------------------------------------|
+| **Repository:** | https://github.com/SyntaxOops/powermail_extended/             |
+| **Packagist:**  | https://packagist.org/packages/syntaxoops/powermail-extended/ |
 
 ---
 
