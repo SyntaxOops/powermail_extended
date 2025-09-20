@@ -2,7 +2,7 @@
 
 $EM_CONF['powermail_extended'] = [
     'title' => 'Powermail Extended',
-    'description' => 'Adds a new backend module to powermail to show all forms and pages and fields as an accordion.',
+    'description' => 'Extends base powermail extension.',
     'category' => 'module',
     'author' => 'haythem daoud',
     'author_email' => 'haythemdaoud.x@gmail.com',

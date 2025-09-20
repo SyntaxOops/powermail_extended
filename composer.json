@@ -1,7 +1,7 @@
 {
 	"name": "syntaxoops/powermail-extended",
 	"type": "typo3-cms-extension",
-	"description": "Extends base powermail extension",
+	"description": "Extends base powermail extension.",
   "keywords": [
     "TYPO3",
     "powermail",
