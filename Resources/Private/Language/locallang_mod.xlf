@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-01-01T12:00:00Z" product-name="powermail_extended">
+        <header/>
+        <body>
+            <trans-unit id="title">
+                <source>Test (Form)</source>
+            </trans-unit>
+            <trans-unit id="mlang_tabs_tab">
+                <source>Test (Form)</source>
+            </trans-unit>
+            <trans-unit id="mlang_labels_tabdescr">
+                <source>This is an example extended test action of powemrail menu list.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

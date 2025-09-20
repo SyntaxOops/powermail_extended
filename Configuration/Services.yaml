@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SyntaxOOps\PowermailExtended\:
+    resource: '../Classes/*'
+
+  In2code\Powermail\Controller\ModuleController:
+    class: SyntaxOOps\PowermailExtended\Controller\ModuleController
+    shared: false
+    public: true

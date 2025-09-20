@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-01-01T12:00:00Z" product-name="powermail_extended">
+        <header/>
+        <body>
+            <trans-unit id="BackendSelectionOverview">
+                <source>Form Overview (Enhanced)</source>
+            </trans-unit>
+            <trans-unit id="sorting.success">
+                <source>Sorting updated successfully</source>
+            </trans-unit>
+            <trans-unit id="sorting.error">
+                <source>An error occurred while updating the sorting</source>
+            </trans-unit>
+            <trans-unit id="view.invalid.formUid">
+                <source>Invalid form UID</source>
+            </trans-unit>
+            <trans-unit id="view.relatedPages">
+                <source>List of related pages:</source>
+            </trans-unit>
+            <trans-unit id="view.noPageFound">
+                <source>No pages found for this form.</source>
+            </trans-unit>
+            <trans-unit id="view.formId">
+                <source>ID form:</source>
+            </trans-unit>
+            <trans-unit id="view.pageUid">
+                <source>UID:</source>
+            </trans-unit>
+            <trans-unit id="form.folderUid">
+                <source>Folder UID:</source>
+            </trans-unit>
+            <trans-unit id="form.fieldsCount">
+                <source>Fields Count:</source>
+            </trans-unit>
+            <trans-unit id="form.editPage">
+                <source>Edit Page</source>
+            </trans-unit>
+            <trans-unit id="form.editField">
+                <source>Edit Field</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

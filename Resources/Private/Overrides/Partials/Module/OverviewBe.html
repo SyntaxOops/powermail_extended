@@ -1,0 +1,69 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+{namespace core=TYPO3\CMS\Core\ViewHelpers}
+{namespace be=TYPO3\CMS\Backend\ViewHelpers}
+
+<f:section name="Main">
+
+    <div id="forms-accordion">
+        <f:for each="{forms}" as="form">
+            <div class="form-accordion">
+                <div class="form-header">
+                    <h5>{form.title} - ({f:translate(key: 'form.folderUid', extensionName: 'powermail_extended')} {form.pid})</h5>
+                    <div class="actions">
+                        <a href="{be:uri.editRecord(table:'tx_powermail_domain_model_form', uid:form.uid, returnUrl:returnUrl)}"
+                           title="dsfs" role="button" class="btn btn-sm">
+                            <core:icon identifier="actions-open" size="small"/>
+                        </a>
+                        <button class="btn btn-sm" data-form-uid="{form.uid}">
+                            <core:icon identifier="actions-eye" size="small"/>
+                        </button>
+                    </div>
+                </div>
+                <div class="ui-accordion-content">
+                    <ul class="sortable-pages" data-form-uid="{form.uid}">
+                        <f:render section="pages" arguments="{pages: form.pages}" />
+                    </ul>
+                </div>
+            </div>
+        </f:for>
+    </div>
+
+</f:section>
+
+<f:section name="pages">
+    <f:for each="{pages}" as="page">
+        <li data-page-uid="{page.uid}">
+            <div class="page-accordion">
+                <div class="page-header">
+                    <h6>
+                        {page.title} - ({f:translate(key: 'form.fieldsCount', extensionName: 'powermail_extended')}
+                        <span>{page.fields -> f:count()}</span>)
+                    </h6>
+                    <a href="{be:uri.editRecord(table:'tx_powermail_domain_model_page', uid:page.uid, returnUrl:returnUrl)}"
+                       title="{f:translate(key: 'form.editPage', extensionName: 'powermail_extended')}" role="button" class="btn btn-sm">
+                        <core:icon identifier="actions-open" size="small"/>
+                    </a>
+                </div>
+                <div class="ui-accordion-content">
+                    <ul class="sortable-fields" data-page-uid="{page.uid}">
+                        <f:render section="fields" arguments="{fields: page.fields}" />
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </f:for>
+</f:section>
+
+<f:section name="fields">
+    <f:for each="{fields}" as="field">
+        <li data-field-uid="{field.uid}">
+            <div class="field-header">
+                <span>{field.title} ({field.marker})</span>
+                <a href="{be:uri.editRecord(table:'tx_powermail_domain_model_field', uid:field.uid, returnUrl:returnUrl)}"
+                   title="{f:translate(key: 'form.editField', extensionName: 'powermail_extended')}" role="button" class="btn btn-sm">
+                    <core:icon identifier="actions-open" size="small"/>
+                </a>
+            </div>
+        </li>
+    </f:for>
+</f:section>

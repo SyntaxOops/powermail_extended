@@ -1,0 +1,124 @@
+/* Reset style */
+.sortable-pages,
+.sortable-fields {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#forms-accordion .form-header,
+#forms-accordion .page-header {
+	position: relative;
+	background: #e9ecef;
+	border-radius: 4px;
+	margin-top: 6px;
+	padding: 0.75rem 1rem;
+	color: #212529;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#forms-accordion .field-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#forms-accordion .form-header button:last-child,
+#forms-accordion .page-header a:last-child,
+#forms-accordion .field-header a:last-child {
+    margin-right: 20px;
+}
+
+#forms-accordion .form-header button,
+#forms-accordion .form-header a,
+#forms-accordion .page-header a,
+#forms-accordion .field-header a {
+	background-color: #1a1818;
+	color: #fff;
+}
+
+#forms-accordion .form-header h5,
+#forms-accordion .page-header h6 {
+	margin-bottom: 0;
+}
+
+#forms-accordion .form-header h5 {
+    font-size: .820rem;
+}
+
+#forms-accordion .form-header:hover,
+#forms-accordion .page-header:hover {
+	background: #dfe3e7;
+}
+
+#forms-accordion .form-header.active,
+#forms-accordion .page-header.active {
+	background: rgb(31, 90, 173);
+	color: #fff;
+}
+
+#forms-accordion .form-header::after,
+#forms-accordion .page-header::after {
+	position: absolute;
+	content: "›";
+	transition: transform 0.2s ease;
+	right: 20px;
+}
+
+#forms-accordion .form-header.active::after,
+#forms-accordion .page-header.active::after {
+	position: absolute;
+	transform: rotate(90deg);
+	color: #fff;
+	right: 20px;
+}
+
+#forms-accordion .ui-accordion-content {
+	display: none;
+	padding: 0.8rem 1rem;
+	border: 1px solid #dee2e6;
+	border-top: 0;
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+	color: #212529;
+}
+
+.sortable-pages>li {
+	margin: 6px 0;
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.2s ease;
+}
+
+.sortable-pages>li:hover {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.sortable-fields>li {
+	margin: 0 6px 6px 6px;
+	padding: 0.7rem;
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+	background: #f8f9fa;
+	cursor: move;
+	transition: background-color 0.2s ease;
+}
+
+.sortable-fields>li:hover {
+	background: #e9ecef;
+}
+
+.ui-state-highlight {
+	height: 2.5em;
+	line-height: 1.2em;
+	border: 2px dashed #0d6efd;
+	border-radius: 4px;
+	background: rgba(13, 110, 253, 0.05) !important;
+}
