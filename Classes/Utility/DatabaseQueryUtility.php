@@ -13,7 +13,6 @@ namespace SyntaxOOps\PowermailExtended\Utility;
 
 use Doctrine\DBAL\ArrayParameterType;
 use Doctrine\DBAL\Exception;
-use Doctrine\DBAL\ParameterType;
 use Doctrine\DBAL\Query\QueryBuilder;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -29,7 +28,7 @@ class DatabaseQueryUtility
      * @param string $table
      * @param array $fields
      * @param array $conditions
-     * @param ArrayParameterType|ParameterType|null $parameterType
+     * @param ArrayParameterType|int|null $parameterType
      * @return array
      * @throws Exception
      */
@@ -37,7 +36,7 @@ class DatabaseQueryUtility
         string $table,
         array $fields,
         array $conditions = [],
-        ArrayParameterType|ParameterType|null $parameterType = null
+        ArrayParameterType|int $parameterType = null
     ): array {
         /** @var QueryBuilder $queryBuilder */
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
