@@ -14,7 +14,7 @@ return [
         'extensionName' => 'Powermail',
         'path' => '/module/powermail/test',
         'controllerActions' => [
-            ModuleController::class => 'test'
+            ModuleController::class => 'test',
         ],
     ],
 ];

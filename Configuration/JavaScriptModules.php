@@ -2,7 +2,7 @@
 
 return [
     'dependencies' => [
-        'backend'
+        'backend',
     ],
     'tags' => [
         'backend.form',

@@ -37,16 +37,12 @@ class ModuleController extends BaseModuleController
 
     /**
      * @param PersistenceManager $persistenceManager
-     * @return void
      */
     public function injectPersistenceManager(PersistenceManager $persistenceManager): void
     {
         $this->persistenceManager = $persistenceManager;
     }
 
-    /**
-     * @return void
-     */
     public function initializeAction(): void
     {
         $this->pageRenderer->addInlineLanguageLabelFile(
@@ -171,7 +167,6 @@ class ModuleController extends BaseModuleController
     /**
      * @param object $repository
      * @param array $uids
-     * @return void
      */
     private function updateSorting(object $repository, array $uids): void
     {
@@ -191,7 +186,7 @@ class ModuleController extends BaseModuleController
     {
         return new JsonResponse([
             'success' => $status === 200,
-            'message' => $message
+            'message' => $message,
         ], $status);
     }
 }

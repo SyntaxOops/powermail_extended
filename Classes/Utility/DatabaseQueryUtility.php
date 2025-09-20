@@ -37,8 +37,8 @@ class DatabaseQueryUtility
         string $table,
         array $fields,
         array $conditions = [],
-        ArrayParameterType|ParameterType|null $parameterType = null)
-    : array {
+        ArrayParameterType|ParameterType|null $parameterType = null
+    ): array {
         /** @var QueryBuilder $queryBuilder */
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
             ->getQueryBuilderForTable($table);
