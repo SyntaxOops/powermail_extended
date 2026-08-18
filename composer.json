@@ -10,8 +10,8 @@
 	"authors": [
 		{
 			"name": "Haythem Daoud",
-      "email": "haythemdaoud.x@gmail.com",
-			"role": "Developer"
+			"role": "Senior TYPO3 Backend Developer",
+      "email": "hello@haythemdaoud.dev"
 		}
 	],
   "license": [
@@ -62,7 +62,11 @@
   "extra": {
     "typo3/cms": {
       "extension-key": "powermail_extended",
-      "web-dir": ".Build/Web"
+      "version": "13.0.1",
+      "web-dir": ".Build/Web",
+      "Package": {
+        "providesPackages": {}
+      }
     }
   }
 }
